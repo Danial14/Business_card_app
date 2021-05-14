@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:src="@drawable/grocery"
+            android:contentDescription="grocery"
+            android:id="@+id/grocery"
+            android:scaleType="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Business name: "
+            android:textSize="26sp"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_below="@+id/grocery"
+            android:id="@+id/business_naMe_heading"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Muqaddas foods"
+            android:id="@+id/business_naMe"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_toRightOf="@+id/business_naMe_heading"
+            android:layout_toEndOf="@+id/business_naMe_heading"
+            android:layout_below="@+id/grocery"
+            android:layout_marginTop="15dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About us:  "
+            android:textSize="26sp"
+            android:fontFamily="sans-serif-black"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/business_naMe"
+            android:id="@+id/about"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We deals in all kinds of groceries"
+            android:id="@+id/businnes_desc"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@android:color/black"
+            android:layout_toRightOf="@+id/about"
+            android:layout_toEndOf="@+id/about"
+            android:layout_below="@+id/business_naMe"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address:  "
+            android:id="@+id/address"
+            android:layout_below="@+id/businnes_desc"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            android:fontFamily="sans-serif-black"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="R-196, Sector 11C-3 North Karachi Twp, Karachi, Karachi City, Sindh"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_below="@+id/businnes_desc"
+            android:layout_toRightOf="@+id/address"
+            android:layout_toEndOf="@+id/address"
+            android:layout_marginTop="15dp"
+            />
+
+    </RelativeLayout>
+</ScrollView>
